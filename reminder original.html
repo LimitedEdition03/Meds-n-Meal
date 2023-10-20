@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reminder Website</title>
+    <link rel="stylesheet" href="reminder original.css">
+    <link rel="stylesheet" href="logo2 original.css">
+    <link rel="stylesheet" href="timeline original.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img class="Imglogo" src="image for meal 3.png" alt="my logo">
+        </div>
+        <div class="heading">
+            <h1>meds 'n' meal</h1>
+        </div>
+    </div>
+    
+
+    </div>
+
+    <main>
+        <section>
+            <div class="timeline-container">
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="indicator">
+                            <div class="inner-dot"></div>
+                        </div>
+                        <div class="event">
+                            <div class="icon-container tomato-red">
+                                <i class="fa fa-stethoscope fa-3x"></i>
+                            </div>
+                            <div class="description-container">
+                                <h2><b>MORNING</b></h2>
+                                <form id="reminder for meal and medicine-form">
+                                    <label for="reminder for -text">Meal:</label>
+                                    <input type="text" id="reminder-text" placeholder="Time for Meal"required>
+                                    <label for="reminder-date">Date and Time:</label>
+                                    <input type="datetime-local" id="datetime">
+                                    <button type="submit" class="mealMor">Set Reminder</button>
+                                    <p><label for="reminder for -text">Medicine:</label>
+                                        <input type="text" id="reminder-text" placeholder="Time for Medicine">
+                                        <label for="reminder-date">Date and Time:</label>
+                                        <input type="datetime-local" id="reminder-date" >
+                                        <button type="submit" class="medMor">Set Reminder</button>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="indicator">
+                            <div class="inner-dot"></div>
+                        </div>
+                        <div class="event">
+                            <div class="icon-container bright-blue">
+                                <i class="fa fa-user fa-3x"></i>
+                            </div>
+                            <div class="description-container">
+                                <h2><b>AFTERNOON</b></h2>
+                                <form id="reminder for meal and medicine-form">
+                                    <label for="reminder for -text">Meal:</label>
+                                    <input type="text" id="reminder-text" placeholder="Enter your reminder" >
+                                    <label for="reminder-date">Date and Time:</label>
+                                    <input type="datetime-local" id="reminder-date" >
+                                    <button type="submit" class="mealAft">Set Reminder</button>
+                                    <p><label for="reminder for -text">Medicine:</label>
+                                        <input type="text" id="reminder-text" placeholder="Enter your reminder"
+                                            >
+                                        <label for="reminder-date">Date and Time:</label>
+                                        <input type="datetime-local" id="reminder-date" >
+                                        <button type="submit" class="medAft">Set Reminder</button>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="indicator">
+                            <div class="inner-dot"></div>
+                        </div>
+                        <div class="event">
+                            <div class="icon-container green-ish">
+                                <i class="fa fa-car fa-2x"></i>
+                            </div>
+                            <div class="description-container">
+                                <h2><b>EVENING</b></h2>
+                                <form id="reminder for meal and medicine-form">
+                                    <label for="reminder for -text">Meal:</label>
+                                    <input type="text" id="reminder-text" placeholder="Enter your reminder" >
+                                    <label for="reminder-date">Date and Time:</label>
+                                    <input type="datetime-local" id="reminder-date" >
+                                    <button type="submit" class="mealEve">Set Reminder</button>
+                                    <p><label for="reminder for -text">Medicine:</label>
+                                        <input type="text" id="reminder-text" placeholder="Enter your reminder"
+                                            >
+                                        <label for="reminder-date">Date and Time:</label>
+                                        <input type="datetime-local" id="reminder-date" >
+                                        <button type="submit" class="medEve">Set Reminder</button>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="reminder.js"></script>
+
+</body>
+
+</html>

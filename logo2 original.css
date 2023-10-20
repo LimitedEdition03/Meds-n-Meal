@@ -1,0 +1,47 @@
+/* Apply basic styles to the header */
+.header {
+    display: flex;
+    align-items: center;
+}
+
+/* Apply styles to the heading */
+h1 {
+    font-size: 36px; /* Increase or decrease the font size as desired */
+    color: #333;
+    /* Other heading styles here */
+}
+
+/* Apply styles to the logo container */
+.logo-container {
+    margin-right: 20px; /* Adjust the right margin for spacing */
+}
+
+/* Apply styles to the logo */
+.logo {
+    width: 24px; /* Adjust the width to make the logo smaller */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Define the keyframes animation for the logo */
+@keyframes logoAnimation {
+    0% {
+        transform: scale(0); /* Start with the logo at 0% scale */
+    }
+    100% {
+        transform: scale(1); /* End with the logo at 100% scale */
+    }
+}
+
+/* Apply the animation to the logo */
+.logo {
+    display: flex;
+    animation: logoAnimation 0.5s ease-in-out; /* Adjust the animation duration and timing function as needed */
+}
+
+.heading{
+    margin: 0px 0px 0px 120px;
+}
+.Imglogo{
+    height: 150px;
+    width: 220px;
+}

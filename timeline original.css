@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body {	
+	/* took gradient combination from Gavyn Caldwell @ 	 https://codepen.io/gavman1995/pen/BWmgXY */
+	/* thank you Gavyn for the awesome color combination */
+	background: linear-gradient(
+    to bottom right,  
+    #2C3E50, #FD746C, 
+    #FF8235, #ffff1c, 
+    #92FE9D, #00C9FF, 
+    #a044ff, #e73827);
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+}
+
+h1 {
+	color: #fff;
+}
+
+h4 {
+	margin: 0;
+}
+
+.tomato-red {
+	background: #ff6347;
+}
+
+.bright-blue {
+	background: #1e88e5;
+}
+
+.green-ish {
+	background: #33cc33;
+}
+
+i {
+	color:#fff;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.timeline-container {
+	height: 450px;
+	width: 400px;
+}
+
+.timeline {
+	height: 100%;
+	width: 100%;
+	list-style-type: none;
+	padding: 0;
+}
+
+.timeline-item {
+	position: relative;
+	width: auto;
+	height: 500px;
+	padding-left: 40px;
+	margin: 30px;
+}
+
+.timeline-item:after, .indicator {
+	position: absolute;
+	content: '';
+}
+
+.timeline-item:nth-child(1):after, .timeline-item:nth-child(2):after {
+	left: 0;
+	top: 0;
+	height: 110%;
+	width: 0px;
+	border: 4px solid #9a9a9a;
+	border-radius: 20px;
+}
+
+.timeline-item:last-child:after {
+	height: 0;
+}
+
+.indicator {
+	left: -11px;
+	top: 0;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #9a9a9a;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner-dot {
+	height: 15px;
+	width: 15px;
+	background-color: #fff;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+.event {
+	height: 100%;
+	width: 300px;
+	background: #eee;
+	display: flex;
+	flex-direction: row;
+}
+
+.icon-container {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} 
+
+.icon-container:before {
+	position: absolute;
+	content: '';
+	height: 0;
+	width: 0;
+	left: -20px;
+	top: 5px;
+	border-left: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+.timeline-item:nth-child(1) .event .icon-container:before {
+	border-right: 10px solid #ff6347;
+} 
+
+.timeline-item:nth-child(2) .event .icon-container:before {
+	border-right: 10px solid #1e88e5;
+} 
+
+.timeline-item:nth-child(3) .event .icon-container:before {
+	border-right: 10px solid #33cc33;
+} 
+
+.description-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	color: #333;
+	padding: 10px;
+}
